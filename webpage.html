@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPAM Department Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #007BFF; /* Blue background color */
+            color: white;
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr 1fr; /* Left, Center, Right columns */
+            grid-template-rows: auto 1fr 1fr auto;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #004080;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Make it vertical */
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px;
+            background-color: #0056b3;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #0066cc;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #0056b3;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #003366;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #004080;
+            text-align: center;
+            padding: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        EPAM
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>About Our Department</h2>
+        <img src="https://www.kluniversity.in/lp/thank-you/assets/img/kl-logos.png" alt="Department Logo">
+        <p>Welcome to the EPAM department! Here are some highlights:</p>
+        <ul>
+            <li><strong>Subjects:</strong> Web Development, Cloud Computing, Data Analytics.</li>
+            <li><strong>Faculty:</strong> Experienced professionals with years of industry experience.</li>
+            <li><strong>Special Programs:</strong> Certification courses, internships, and hands-on projects.</li>
+            <li><strong>Facilities:</strong> State-of-the-art labs and resources for practical learning.</li>
+        </ul>
+    </main>
+
+    <aside>
+        <h3>Updates & Notices</h3>
+        <ul>
+            <li>New semester begins in February 2025.</li>
+            <li>Workshop on AI & ML next week.</li>
+            <li>Connect with us for resources and help.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        &copy; 2025
+    </footer>
+</body>
+</html>
